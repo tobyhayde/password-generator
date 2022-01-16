@@ -48,7 +48,7 @@ if (
     return alert("Click the 'Generate' button again. Please select at least one specification");
 }
 
-// randomly selects characters for availChar and then loops until the length equals passwordLength
+// selects characters for availChar at random and then loops until the length is equal to the passwordLength
 for (var i=0; i<passwordLength; i++) {
     password +=availChar[Math.floor(Math.random () * availChar.length)];
 }
