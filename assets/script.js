@@ -11,7 +11,7 @@ function generatePassword(){
     var availChar = "";
 
 // prompt for password length
-var passwordLength = prompt("How many characters would you like your password to be? Please choose a password length between 8 and 128.")
+var passwordLength = prompt("How many characters long would you like your password to be? Please choose a password length between 8 and 128.")
 
 // conditional statement to verify password length is valid
 if (passwordLength >= 8 && passwordLength <= 128) {
@@ -24,13 +24,13 @@ else {
     return "";
 }
 
-// confirm password specifications with variable declaration.
+// confirm password specifications with variable declaration
 var qrySmallLetters = confirm("Do you want to have lower case characters in your password?  'Ok' for Yes / 'Cancel' for No")
 var qryCapLetters = confirm("Do you want to have upper case characters in your password?    'Ok' for Yes / 'Cancel' for No")
 var qryNumbers = confirm("Do you want to have numbers in your password?     'Ok' for Yes / 'Cancel' for No")
 var qrySpecialChar = confirm("Do you want to have special characters in your password?      'Ok' for Yes / 'Cancel' for No")
 
-// conditional statements for selected password specifications 
+// conditional statements for selected password specifications
 if (qrySmallLetters) {
     availChar += smallLetters
 }
@@ -38,6 +38,9 @@ if (qryCapLetters) {
     availChar += capLetters
 }
 if (qryNumbers) {
+    availChar += numbers
+}
+if (qrySpecialChar) {
     availChar += specialChar
 }
 
@@ -55,12 +58,12 @@ for (var i=0; i<passwordLength; i++) {
 return password;
 }
 
-// Write password to the #password input
+// function to produce the generated password in the correct box in html
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
 
-// Add event listener to generate button
+// event listener for generate button
 generateBtn.addEventListener("click", writePassword);
