@@ -47,8 +47,8 @@ if (qrySpecialChar) {
 // conditional statement for if no specifications are confirmed, will return an alert to reset
 if (
     !qrySmallLetters && !qryCapLetters && !qryNumbers && !qrySpecialChar
-) {
-    return alert("Click the 'Generate' button again. Please select at least one specification");
+    ) {
+return alert("Click the 'Generate' button again. Please select at least one specification");
 }
 
 // selects characters for availChar at random and then loops until the length is equal to the passwordLength
