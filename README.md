@@ -14,4 +14,6 @@ This repository contains 3 progamming lanuages (HTML, CSS, and Javascript) produ
 #
 ![Screenshot (10)](https://user-images.githubusercontent.com/95835120/149674744-80a1bfa1-bbfe-4eeb-bc57-c0e8ada83aa4.png)
 #
+![Screenshot (12)](https://user-images.githubusercontent.com/95835120/149674862-0697a4c1-8dcc-4229-9ec8-e98ca06559ed.png)
+#
 Website URL: https://tobyhayde.github.io/password-generator/
